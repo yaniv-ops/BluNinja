@@ -1,0 +1,774 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block lang %} 
+<html dir="rtl" lang="en">
+{%  endblock %}
+{% block title %}
+    בונים עסקים מצליחים &mdash; BluNinja
+{% endblock %}
+{% block style %} 
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" 
+    rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-onix-digital.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animated.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+
+{% endblock %}
+
+{% block content %}
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="{% static 'index.html' %}" class="logo">
+              <img src="{% static 'assets/images/logo.png' %}">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">ראשי</a></li>
+              <li class="scroll-to-section"><a href="#services">מוצרים</a></li>
+              <li class="scroll-to-section"><a href="#about">אודותינו</a></li>
+              <li class="scroll-to-section"><a href="#portfolio">עבודות לדוגמא</a></li>
+              <li class="scroll-to-section"><a href="#video">סרטונים לדוגמא</a></li> 
+              <li class="scroll-to-section"><a href="#contact">יצירת קשר</a></li> 
+              <li class="scroll-to-section"><div class="main-red-button-hover"><a href="#contact">הודעה בווצאפ</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>תפריט</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="owl-carousel owl-banner">
+                <div class="item header-text">
+                  <h6>ברוכים הבאים לבלו-נינג'ה</h6>
+                  <h2>האתר <em>שלך</em> יכול להיות מקום ראשון <span>בתוצאות החיפוש</span></h2>
+                  <p>אנחנו מתמחים בבניית אתרים הכי יעילים לתוצאות החיפוש באינטרנט, כך שהאתר שלך יהיה מוביל בתחום שלו.</p>
+                  <div class="down-buttons">
+                    <div class="main-blue-button-hover">
+                      <a href="#contact">לצפות בעבודות שלנו</a>
+                    </div>
+                    <div class="call-button">
+                      <a href="#"><i class="fa fa-phone"></i> 052-4204155</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item header-text">
+                  <h6>אתר פעיל מהיום הראשון</h6>
+                  <h2>האתר שלך <em>ניתן יהיה לצפייה</em> כבר <span> ב-24 שעות הראשונות</span></h2>
+                  <p>תוך 24 שעות מחתימת הזמנת העבודה ,תקבל מאיתנו לינק לאתר שלך ,הניתן לפרסום מיידי.</p>
+                  <div class="down-buttons">
+                    <div class="main-blue-button-hover">
+                      <a href="#services">לשלוח אלינו הודעה</a>
+                    </div>
+                    <div class="call-button">
+                      <a href="#"><i class="fa fa-phone"></i> 052-420-4155</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item header-text">
+                  <h6>סיכומי תוצאות חודשיים</h6>
+                  <h2> כל חודש<em> יופיע במייל שלך סיכום</em> של הביצועים של <span>האתר שלך</span></h2>
+                  <p>נבצע מעקב על ביצועי האתר שלך, ובכל חודש נקיים פגישה לגבי אסטרטגיה בהתאם לסיכום החודשי.</p>
+                  <div class="down-buttons">
+                    <div class="main-blue-button-hover">
+                      <a href="#video">צפה בסרטונים שלנו</a>
+                    </div>
+                    <div class="call-button">
+                      <a href="#"><i class="fa fa-phone"></i> 052-420-4155</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="our-services section">
+    <div class="services-right-dec">
+      <img src="{% static 'assets/images/services-right-dec.png' %}" alt="">
+    </div>
+    <div class="container">
+      <div class="services-left-dec">
+        <img src="{% static 'assets/images/services-left-dec.png' %}" alt="">
+      </div>
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3 middle-sub">
+          <div class="section-heading">
+            <h2>אנחנו <em>נקדם את האתר שלך</em> בזכות הכלים היחודיים <span>והמקצוענות שלנו</span></h2>
+            <span>Our Services</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-services">
+            <div class="item">
+              <h4>אנחנו מארחים את האתר על המערכת שלנו</h4>
+              <div class="icon"><img src="{% static 'assets/images/service-icon-01.png' %}" alt=""></div>
+              <p>אנחנו מארחים על הענן של אמאזון כדי להבטיח ,מהירות ,וביצועים ,ושהאתר שלך יהיה זמין תמיד בכל מקום בעולם.</p>
+            </div>
+            <div class="item">
+              <h4>אסטרטגיה מותאמת לאופי העסק ולשירותים אותם הוא מעניק</h4>
+              <div class="icon"><img src="{% static 'assets/images/service-icon-02.png' %}" alt=""></div>
+              <p>נתאים את האסטרטגיה לפי תוכנית מוסדרת ,כדי להביא תוצאות מירביות</p>
+            </div>
+            <div class="item">
+              <h4>עיצוב ואיפיון האתר</h4>
+              <div class="icon"><img src="{% static 'assets/images/service-icon-03.png' %}" alt=""></div>
+              <p>צוות מקצועי ומוכשר יתאים את האתר שלך לחווית לקוח מיטבית</p>
+            </div>
+            <div class="item">
+              <h4>ייעוץ והכוונה </h4>
+              <div class="icon"><img src="{% static 'assets/images/service-icon-04.png' %}" alt=""></div>
+              <p>אנו נלווה אותך בכל התהליך ,נייעץ וניישם את הההמלצות עד לתוצאה הרצויה</p>
+            </div>
+            <div class="item">
+              <h4>מהירות וביצועים לאתר שלך</h4>
+              <div class="icon"><img src="{% static 'assets/images/service-icon-01.png' %}" alt=""></div>
+              <p>אירוח על ענן של אמאזון , המוביל בעולם , המבטיח מהירות וביצועים אופטימליים.</p>
+            </div>
+            <div class="item">
+              <h4>פיתוח פול סטאק מקצה לקצה</h4>
+              <div class="icon"><img src="{% static 'assets/images/service-icon-02.png' %}" alt=""></div>
+              <p>אנחנו משתמשים במתודולוגיות מתקדמות על מנת לתת מענה מדויק לצרכי הפיתוח שלכם. שקיפות היא ערך עליון, ולכן חשוב לנו לספק לכם עדכונים שוטפים לאורך כל שלבי הפרויקט.</p>
+            </div>
+            <div class="item">
+              <h4>אנחנו One-Stop-Shop!</h4>
+              <div class="icon"><img src="{% static 'assets/images/service-icon-03.png' %}" alt=""></div>
+              <p>החל מתכנון ועיצוב האתר דרך הבנייה שלו והאירוח ועד לפירסום ואופטימזציה</p>
+            </div>
+            <div class="item">
+              <h4>חיבורים מהירים לכל נקודה בעולם</h4>
+              <div class="icon"><img src="{% static 'assets/images/service-icon-04.png' %}" alt=""></div>
+              <p>בזכות הטכנולוגיה של אמאזון , אנחנו יכולים לארח במקביל בנקודות שונות בעולם .</p>
+            </div>
+            <div class="item">
+              <h4>התאמה לצפייה בכל סוגי המסכים</h4>
+              <div class="icon"><img src="{% static 'assets/images/service-icon-01.png' %}" alt=""></div>
+              <p>אנחנו פועלים בגישת מובייל ,על מנת ליצור חווית צפייה מקסימלית בכל סוגי המסכים הקיימים.</p>
+            </div>
+            <div class="item">
+              <h4>רעיונות לפרוייקט הבא שלך </h4>
+              <div class="icon"><img src="{% static 'assets/images/service-icon-02.png' %}" alt=""></div>
+              <p>לא משנה באיזה תחום האתר שלך ,אנחנו נציג בפנייך רעיונות ודרכי פעולה היועילו מאוד לקידומו.</p>
+            </div>
+            <div class="item">
+              <h4>מחקר מתחרים בגוגל</h4>
+              <div class="icon"><img src="{% static 'assets/images/service-icon-03.png' %}" alt=""></div>
+              <p>נשתמש בכלים מתקדמים בתשלום לקבלת תובנות לגבי המתחרים העיקריים שלכם בגוגל, הביטויים שמביאים להם טראפיק ושיטות הקידום שלהם על מנת שנוכל ליצור אסטרטגיית קידום שתתמוך ביעדים שהצבתם לעצמכם.</p>
+            </div>
+            <div class="item">
+              <h4>קידום אתרי תדמית וחברה</h4>
+              <div class="icon"><img src="{% static 'assets/images/service-icon-04.png' %}" alt=""></div>
+              <p>נקדם את הביטויים שיביאו לכם יותר לידים ושיחות טלפון, ולא נבזבז את הזמן על כאלה שלא יביאו לכם לקוחות. מחקר המילים שלנו יתמקד בחיפושים שהלקוחות הפוטנציאליים שלכם מחפשים ותכנית התכנים שלנו תתמד בתכנים שקהל היעד שלכם רוצה לצרוך.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="left-image">
+            <img src="{% static 'assets/images/about-left-image.png' %}" alt="Two Girls working together">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h2>לתת לאתרך לצמוח בזכות <em> כלי ה-seo 
+            </em><span>וניהול</span> הפרוייקטים שלנו</h2>
+            <p>
+              האתרים שלנו בנויים כדי לנצל בצורה מיטבית את האלגוריתמים של כל סוגי הדפדפנים, מה שיגרום לאתרך לבלוט מעל כל השאר.
+            </p>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="fact-item">
+                  <div class="count-area-content">
+                    <div class="icon">
+                      <img src="{% static 'assets/images/service-icon-01.png' %}" alt="">
+                    </div>
+                    <div class="count-digit">320</div>
+                    <div class="count-title">פרויקטים בנויים</div>
+                    <p>פרוייקטים הם אתרים ,שבאופן שוטף אנו מנהלים ומקדמים ברשת האינטרנט</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="fact-item">
+                  <div class="count-area-content">
+                    <div class="icon">
+                      <img src="{% static 'assets/images/service-icon-02.png' %}" alt="">
+                    </div>
+                    <div class="count-digit">640</div>
+                    <div class="count-title">אתרים</div>
+                    <p>אתרים מותאמים למחשב, לפטופים, וכל מסכי הסלולר</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="fact-item">
+                  <div class="count-area-content">
+                    <div class="icon">
+                      <img src="{% static 'assets/images/service-icon-03.png' %}" alt="">
+                    </div>
+                    <div class="count-digit">120</div>
+                    <div class="count-title">חברות</div>
+                    <p>שרותי בק ופרונט לחברות צד שלישי</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio" class="our-portfolio section">
+    <div class="portfolio-left-dec">
+      <img src="{% static 'assets/images/portfolio-left-dec.png' %}" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3 middle-sub">
+          <div class="section-heading">
+            <h2>הפרוייקטים <em>לדוגמא</em> והמחשות <span>של לקוחותינו</span></h2>
+            <span>Our Portfolio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-portfolio">
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/portfolio-01.jpg' %}" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a rel="sponsored" href="https://templatemo.com/tm-564-plot-listing" target="_parent"><h4>First Project</h4></a>
+                    <span>Plot Listing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/portfolio-02.jpg' %}" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>Project Two</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/portfolio-03.jpg' %}" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a rel="sponsored" href="https://templatemo.com/tm-562-space-dynamic" target="_parent"><h4>Third Project</h4></a>
+                    <span>Space Dynamic SEO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/portfolio-04.jpg' %}" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>Project Four</h4></a>
+                    <span>Website Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/portfolio-01.jpg' %}" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>Fifth Project</h4></a>
+                    <span>Digital Assets</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/portfolio-02.jpg' %}" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>Sixth Project</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/portfolio-03.jpg' %}" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>7th Project</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/portfolio-04.jpg" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>8th Project</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/portfolio-01.jpg' %}" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>9th Project</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/portfolio-02.jpg' %}" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>Project Ten</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/portfolio-03.jpg' %}" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>Project Eleven</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/portfolio-04.jpg' %}" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>12th Project</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pricing" class="pricing-tables">
+    <div class="tables-left-dec">
+      <img src="{% static 'assets/images/tables-left-dec.png' %}" alt="">
+    </div>
+    <div class="tables-right-dec">
+      <img src="{% static 'assets/images/tables-right-dec.png' %}" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3 middle-sub">
+          <div class="section-heading">
+            <h2>בחר <em>תוכנית</em><span> לפרוייקט </span>הבא שלך</h2>
+            <span>התוכניות שלנו</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="item first-item">
+            <h4>סטאנדרט</h4>
+            <em>$160/mo</em>
+            <span>$140</span>
+            <ul>
+              <li>עד 10 עמודים</li>
+              <li>עד 10 ג'יגה אחסון דאטה בייס</li>
+              <li>1 דוח"ות ביצועי אתר</li>
+              <li>תמיכה בסיסית</li>
+            </ul>
+            <div class="main-blue-button-hover">
+              <a href="#">התחל כאן</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item second-item">
+            <h4>מתקדם</h4>
+            <em>$240/mo</em>
+            <span>$200</span>
+            <ul>
+              <li>עד 20 עמודים</li>
+              <li>עד 30 ג'יגה אחסון דאטה בייס</li>
+              <li>3 דוח"ות ביצועי אתר</li>
+              <li>תמיכה מקצועית</li>
+            </ul>
+            <div class="main-blue-button-hover">
+              <a href="#">התחל כאן</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item third-item">
+            <h4>חברות וארגונים</h4>
+            <em>$360/mo</em>
+            <span>$280</span>
+            <ul>
+              <li>עד 30 עמודים</li>
+              <li>עד 100 ג'יגה אחסון דאטה בייס</li>
+              <li>8 דוח"ות ביצועי אתר</li>
+              <li>תמיכה פרימיום</li>
+            </ul>
+            <div class="main-blue-button-hover">
+              <a href="#">התחל כאן</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="subscribe" class="subscribe">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="inner-content">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1 website-seo">
+                <h2>לגלות את ציון האינדקס של אתרך כאן</h2>
+                <form id="subscribe" action="" method="get">
+                  <input type="text" name="website" id="website" placeholder="Your Website URL" required="">
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                  <button type="submit" id="form-submit" class="main-button ">הרשם</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="video" class="our-videos section">
+    <div class="videos-left-dec">
+      <img src="{% static 'assets/images/videos-left-dec.png' %}" alt="">
+    </div>
+    <div class="videos-right-dec">
+      <img src="{% static 'assets/images/videos-right-dec.png' %}" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-8">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/JynGuQx4a1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <div class="overlay-effect">
+                            <a href="#"><h4>Project One</h4></a>
+                            <span>SEO &amp; Marketing</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/RdJBSFpcO4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <div class="overlay-effect">
+                            <a href="#"><h4>Second Project</h4></a>
+                            <span>Advertising &amp; Marketing</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/ZlfAjbQiL78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <div class="overlay-effect">
+                            <a href="#"><h4>Project Three</h4></a>
+                            <span>Digital &amp; Marketing</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/mx1WseE7-0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <div class="overlay-effect">
+                            <a href="#"><h4>Fourth Project</h4></a>
+                            <span>SEO &amp; Advertising</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                  <div class="menu">
+                    <div class="active">
+                      <div class="thumb">
+                        <img src="{% static 'assets/images/video-thumb-01.png' %}" alt="">
+                        <div class="inner-content">
+                          <h4>Project One</h4>
+                          <span>SEO &amp; Marketing</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <img src="assets/images/video-thumb-02.png" alt="">
+                        <div class="inner-content">
+                          <h4>Second Project</h4>
+                          <span>Advertising &amp; Marketing</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <img src="{% static 'assets/images/video-thumb-03.png' %}" alt="Marketing">
+                        <div class="inner-content">
+                          <h4>Project Three</h4>
+                          <span>Digital &amp; Marketing</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <img src="{% static 'assets/images/video-thumb-04.png' %}" alt="SEO Work">
+                        <div class="inner-content">
+                          <h4>Fourth Project</h4>
+                          <span>SEO &amp; Advertising</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="contact-us section contact-hebrew">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="section-heading">
+            <h2>הרגישו חופשי <em>ליצור עמנו קשר</em> דרך <span>הטופס הבא</span></h2>
+            <div id="map">
+              <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            </div>
+            <div class="info">
+              <span><i class="fa fa-phone"></i> <a href="#">תתקשרו<br>052-4204155</a></span>
+              <span><i class="fa fa-envelope"></i> <a href="#">שלחו מייל<br>blu.ninja.2022@gmail.com</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <form id="contact" action="" method="get">
+            <div class="row">
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="website" id="website" placeholder="Your Website URL" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-button">Submit Request</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="contact-dec">
+      <img src="{% static 'assets/images/contact-dec.png' %}" alt="">
+    </div>
+    <div class="contact-left-dec">
+      <img src="{% static 'assets/images/contact-left-dec.png' %}" alt="">
+    </div>
+  </div>
+
+  <div class="footer-dec">
+    <img src="{% static 'assets/images/footer-dec.png' %}" alt="">
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="about footer-item">
+            <div class="logo">
+              <a href="#"><img src="{% static 'assets/images/logo.png' %}" alt="Onix Digital TemplateMo"></a>
+            </div>
+            <a href="#">blu.ninja.2022@gmail.com</a>
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="services footer-item">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">SEO Development</a></li>
+              <li><a href="#">Business Growth</a></li>
+              <li><a href="#">Social Media Managment</a></li>
+              <li><a href="#">Website Optimization</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="community footer-item">
+            <h4>Community</h4>
+            <ul>
+              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="#">Business Ideas</a></li>
+              <li><a href="#">Website Checkup</a></li>
+              <li><a href="#">Page Speed Test</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="subscribe-newsletters footer-item">
+            <h4>Subscribe Newsletters</h4>
+            <p>Get our latest news and ideas to your inbox</p>
+            <form action="#" method="get">
+              <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+              <button type="submit" id="form-submit" class="main-button "><i class="fa fa-paper-plane-o"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright">
+            <p>Copyright © 2022 BluNinja Co., Ltd. All Rights Reserved. 
+            <br>
+            Designed by <a rel="nofollow" href="" title="free CSS templates">BluNinja</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+  <script src="{% static 'assets/js/animation.js' %}"></script>
+  <script src="{% static 'assets/js/imagesloaded.js' %}"></script>
+  <script src="{% static 'assets/js/custom.js' %}"></script>
+
+  <script>
+  // Acc
+    $(document).on("click", ".naccs .menu div", function() {
+      var numberIndex = $(this).index();
+
+      if (!$(this).is("active")) {
+          $(".naccs .menu div").removeClass("active");
+          $(".naccs ul li").removeClass("active");
+
+          $(this).addClass("active");
+          $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+          var listItemHeight = $(".naccs ul")
+            .find("li:eq(" + numberIndex + ")")
+            .innerHeight();
+          $(".naccs ul").height(listItemHeight + "px");
+        }
+    });
+  </script>
+</body>
+</html>
+{%  endblock %}
