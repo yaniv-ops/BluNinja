@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.urls import reverse
 from django.http import HttpResponseRedirect
 import re
 
@@ -6,3 +7,6 @@ import re
 
 def index(request):
     return render(request,'mainapp/index.html')
+
+def form(request, plan):
+    return render(request, 'mainapp/form-application.html', {'plan':plan})

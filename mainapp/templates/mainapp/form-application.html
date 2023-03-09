@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html><html lang="heb" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/css/style-form.css' %}">
+    <script src="https://kit.fontawesome.com/1bce404faa.js" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h2>נא למלא את כל הפרטים</h2>
+        </div>
+        <form action="{% url 'index-page' %}" class="form" id="form" method="post">
+            {% csrf_token %}
+            <div class="form-control">
+                <label for="">התוכנית המבוקשת</label>
+                <input readonly type="text" id="plan" value="{{ plan }}">
+                <svg class="check-icon">
+                    <use xlink:href="{% static 'assets/fonts/sprite.svg' %}#icon-check-alt"></use>
+                </svg>
+                <svg class="note-icon">
+                    <use xlink:href="{% static 'assets/fonts/sprite.svg' %}#icon-notification"></use>
+                </svg>    
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <label for="">שם פרטי</label>
+                <input type="text" placeholder="שם פרטי כאן" id="username">
+                <svg class="check-icon">
+                    <use xlink:href="{% static 'assets/fonts/sprite.svg' %}#icon-check-alt"></use>
+                </svg>
+                <svg class="note-icon">
+                    <use xlink:href="{% static 'assets/fonts/sprite.svg' %}#icon-notification"></use>
+                </svg>    
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <label for="">שם משפחה</label>
+                <input type="text" placeholder="שם משפחה כאן" id="userfamily">
+                <svg class="check-icon">
+                    <use xlink:href="{% static 'assets/fonts/sprite.svg' %}#icon-check-alt"></use>
+                </svg>
+                <svg class="note-icon">
+                    <use xlink:href="{% static 'assets/fonts/sprite.svg' %}#icon-notification"></use>
+                </svg>    
+                <small>error message</small>
+            </div>            <div class="form-control">
+                <label for="">מספר טלפון</label>
+                <input type="text" placeholder="מספר טלפון כאן" id="phone">
+                <svg class="check-icon">
+                    <use xlink:href="{% static 'assets/fonts/sprite.svg' %}#icon-check-alt"></use>
+                </svg>
+                <svg class="note-icon">
+                    <use xlink:href="{% static 'assets/fonts/sprite.svg' %}#icon-notification"></use>
+                </svg>    
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <label for="">כתובת דואר אלקטרוני</label>
+                <input type="text" placeholder="כתובת דואר אלקטרוני כאן" id="email">
+                <svg class="check-icon">
+                    <use xlink:href="{% static 'assets/fonts/sprite.svg' %}#icon-check-alt"></use>
+                </svg>
+                <svg class="note-icon">
+                    <use xlink:href="{% static 'assets/fonts/sprite.svg' %}#icon-notification"></use>
+                </svg>    
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <label for="">שם האתר המבוקש (אופציונלי)</label>
+                <input type="text" placeholder="כתובת האתר המבוקש כאן" id="web">
+                <svg class="check-icon">
+                    <use xlink:href="{% static 'assets/fonts/sprite.svg' %}#icon-check-alt"></use>
+                </svg>
+                <svg class="note-icon">
+                    <use xlink:href="{% static 'assets/fonts/sprite.svg' %}#icon-notification"></use>
+                </svg>    
+                <small>error message</small>
+            </div>
+            <button type="submit" form="form">שלח טופס</button>
+        </form>
+        </div>
+        <script src="{% static 'assets/js/script-js.js' %}"></script>
+</body>
+</html>
