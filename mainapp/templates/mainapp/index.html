@@ -40,11 +40,19 @@
   <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 default-row">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="{% static 'index.html' %}" class="logo">
-              <img src="{% static 'assets/images/logo.png' %}">
+            <a href="{% url 'index-page' %}" class="logo">
+              <svg class="star">
+                <use xlink:href="{% static 'assets/images/sprite.svg' %}#1"></use>
+              </svg>
+              <svg class="typo">
+                <use xlink:href="{% static 'assets/images/sprite.svg' %}#2"></use>
+              </svg>              
+              <svg class="tech-logo-part">
+                <use xlink:href="{% static 'assets/images/sprite.svg' %}#3"></use>
+              </svg>
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -687,7 +695,7 @@
         <div class="col-lg-3">
           <div class="about footer-item">
             <div class="logo">
-              <a href="#"><img src="{% static 'assets/images/logo.png' %}" alt="Onix Digital TemplateMo"></a>
+              <a href="#"><img src="{% static 'assets/images/bluninja.co.png' %}" alt="Onix Digital TemplateMo"></a>
             </div>
             <a href="#">blu.ninja.2022@gmail.com</a>
             <ul>
@@ -749,6 +757,7 @@
   <script src="{% static 'assets/js/animation.js' %}"></script>
   <script src="{% static 'assets/js/imagesloaded.js' %}"></script>
   <script src="{% static 'assets/js/custom.js' %}"></script>
+  <script src="{% static 'assets/js/index.js' %}"></script>
 
   <script>
   // Acc
